@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a6328e1f44eab4b97c48fff045de2f, type: 3}
+  m_Name: Tutorial_1
+  m_EditorClassIdentifier: 
+  CharacterId: 0
+  Dialogues:
+  - line: 'Welcome To The World Baby! '
+    conditionCheck: 0
+  - line: I'm your mother and i'm here to teach you how to stay alive!
+    conditionCheck: 0
+  - line: 'Why don''t you try <color=orange>moving</color> your legs with <color=orange>WASD</color> '
+    conditionCheck: 1
+  - line: Good to see your legs working! We can use those legs to  <color=#00ffffff>climb
+      up and escape this basement</color> together!
+    conditionCheck: 0
+  - line: 'When you''re done weaving! We can go to sleep!  '
+    conditionCheck: 0
+  Id: 1

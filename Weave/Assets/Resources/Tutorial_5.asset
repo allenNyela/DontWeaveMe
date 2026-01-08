@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a6328e1f44eab4b97c48fff045de2f, type: 3}
+  m_Name: Tutorial_5
+  m_EditorClassIdentifier: 
+  CharacterId: 0
+  Dialogues:
+  - line: When you're in weave mode, you can use the <color=orange>C key to cancel
+      your weave
+    conditionCheck: 0
+  - line: When you press <color=orange>R while on your web</color>, you can undo
+      it. But that will only return 80% of the silk used
+    conditionCheck: 0
+  - line: Now that we're done making our webs, lets go to sleep and see what we catch
+      when we wake!
+    conditionCheck: 0
+  Id: 5

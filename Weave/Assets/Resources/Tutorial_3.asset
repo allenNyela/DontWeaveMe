@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a6328e1f44eab4b97c48fff045de2f, type: 3}
+  m_Name: Tutorial_3
+  m_EditorClassIdentifier: 
+  CharacterId: 0
+  Dialogues:
+  - line: When you're weaving, you can move to another node and <color=orange>Spacebar</color>
+      to web connect them together!
+    conditionCheck: 2
+  Id: 3

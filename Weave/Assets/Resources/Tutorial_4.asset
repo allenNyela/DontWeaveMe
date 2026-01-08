@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a6328e1f44eab4b97c48fff045de2f, type: 3}
+  m_Name: Tutorial_4
+  m_EditorClassIdentifier: 
+  CharacterId: 0
+  Dialogues:
+  - line: When you close a loop where you started it, you'll have <color=orange>created
+      a web!</color>  This area will be used to catch flies when we <color=orange>go
+      to sleep. Leaving us with some food when we wake up!
+    conditionCheck: 3
+  Id: 4

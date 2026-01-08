@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685ce1833d5cf13438e2c32e93d00277, type: 3}
+  m_Name: Sequence
+  m_EditorClassIdentifier: 
+  GameFlowSequences:
+  - CurrentState: {fileID: 11400000, guid: 2bfc1a0a315a87845b94cdfe348b2dbb, type: 2}
+    FailState: {fileID: 0}
+  - CurrentState: {fileID: 11400000, guid: 22ae0476baaf30f46aeea2525d04f0eb, type: 2}
+    FailState: {fileID: 0}
+  - CurrentState: {fileID: 11400000, guid: a56d3231d0d5e63478fcddec2d86cb51, type: 2}
+    FailState: {fileID: 0}
+  - CurrentState: {fileID: 11400000, guid: f33ca3dc158547c4c80c14ff9331fa07, type: 2}
+    FailState: {fileID: 11400000, guid: a56d3231d0d5e63478fcddec2d86cb51, type: 2}
+  - CurrentState: {fileID: 11400000, guid: a89c4ab76eb19194c9ba51f311f0792d, type: 2}
+    FailState: {fileID: 0}
+  - CurrentState: {fileID: 11400000, guid: 7a4787c9256d4464187ffe6ec78f9404, type: 2}
+    FailState: {fileID: 0}
+  - CurrentState: {fileID: 11400000, guid: 0d452eade1eb9a941ae956e4d3bd672d, type: 2}
+    FailState: {fileID: 11400000, guid: 7a4787c9256d4464187ffe6ec78f9404, type: 2}
+  - CurrentState: {fileID: 11400000, guid: 162a6c31aab49df43a49c41eebd8ddfc, type: 2}
+    FailState: {fileID: 0}
+  - CurrentState: {fileID: 11400000, guid: ab886d79810cf654b84c81a556dea3ee, type: 2}
+    FailState: {fileID: 0}
+  - CurrentState: {fileID: 11400000, guid: 7449040b50d812c418b0f6a536af25b1, type: 2}
+    FailState: {fileID: 0}
+  - CurrentState: {fileID: 11400000, guid: 3ac47b35efdc4de4996c5a780c4b75e2, type: 2}
+    FailState: {fileID: 0}
+  - CurrentState: {fileID: 11400000, guid: 4939b1d353d624a4f87c1c5b21d4c154, type: 2}
+    FailState: {fileID: 0}
+  - CurrentState: {fileID: 11400000, guid: 1399fdfb79fdc3645adee7c8774b9352, type: 2}
+    FailState: {fileID: 0}
+  - CurrentState: {fileID: 11400000, guid: 9b7b0799cc32430419167eb3029e29e9, type: 2}
+    FailState: {fileID: 11400000, guid: 1399fdfb79fdc3645adee7c8774b9352, type: 2}
+  - CurrentState: {fileID: 11400000, guid: fc54f6a3be412244b897a376de1ce6d0, type: 2}
+    FailState: {fileID: 0}
+  - CurrentState: {fileID: 11400000, guid: 0f5c9effced9aaf40b4ece2e21a3d11b, type: 2}
+    FailState: {fileID: 0}
+  - CurrentState: {fileID: 11400000, guid: ee1656ce99f264541946cd74be30f811, type: 2}
+    FailState: {fileID: 11400000, guid: 0f5c9effced9aaf40b4ece2e21a3d11b, type: 2}
+  - CurrentState: {fileID: 11400000, guid: 3fabe66065d31374cbfa19d451b35f8f, type: 2}
+    FailState: {fileID: 0}

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a6328e1f44eab4b97c48fff045de2f, type: 3}
+  m_Name: Tutorial_2
+  m_EditorClassIdentifier: 
+  CharacterId: 0
+  Dialogues:
+  - line: 'As spiders, we eat by catching flies in our webs! '
+    conditionCheck: 0
+  - line: Use <color=orange>Spacebar</color>  on these <color=orange>nodes</color>
+      to begin weaving. Why don't you try that out for yourself?
+    conditionCheck: 2
+  - line: But be careful! Using up silk will eat up your <color=orange>silk bar!
+      </color>Be wary to make sure you have enough silk to close a loop!
+    conditionCheck: 0
+  Id: 2
