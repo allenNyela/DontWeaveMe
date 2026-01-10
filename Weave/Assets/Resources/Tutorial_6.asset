@@ -17,6 +17,9 @@ MonoBehaviour:
   - line: Baby, you're a natural at weaving! But here we have some obstacles that
       we can't weave on!
     conditionCheck: 0
+  - line: Do you see those Wooden Planks? You can use <color=orange>X while next
+      to it to move it around! </color>
+    conditionCheck: 0
   - line: You can use <color=orange>E to drop a node! </color>That will help you
       weave from the middle of the board! Give it a go!
     conditionCheck: 0

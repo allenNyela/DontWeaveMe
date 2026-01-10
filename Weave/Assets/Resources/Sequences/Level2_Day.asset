@@ -15,7 +15,7 @@ MonoBehaviour:
   Time: 0
   ScenePath: Scenes/Level 2
   CreateMother: 1
-  PlayerStamina: 16
+  PlayerStamina: 30
   MotherStamina: 70
   PlayerAvailableNodes: 3
   MotherPosition: {x: 0, y: 0}
