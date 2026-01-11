@@ -164,7 +164,7 @@ public class DialogueManager : MonoBehaviour
             switch (conditionCheck)
             {
                 case ConditionCheck.WASD_Check:
-                    if (GameManager.Instance.player.input.magnitude > 0)
+                    if (GameManager.Instance.player.input.movementInput.magnitude > 0)
                     {
                         wasdTime += Time.deltaTime;
 
