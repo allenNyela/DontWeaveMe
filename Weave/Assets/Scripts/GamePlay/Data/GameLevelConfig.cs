@@ -41,4 +41,7 @@ public class GameLevelConfig : GameConfig
 
     [SerializeField]
     public List<Vector2Int> lockNodes;
+
+    [SerializeField]
+    public bool SpawnBorder = false;
 }

@@ -22,3 +22,6 @@ MonoBehaviour:
   PlayerPosition: {x: 0, y: 0}
   FlyQuota: 4
   PlayTutorial: 0
+  HideSleepButton: 0
+  lockNodes: []
+  SpawnBorder: 1

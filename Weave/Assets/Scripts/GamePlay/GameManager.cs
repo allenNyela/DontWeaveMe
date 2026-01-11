@@ -364,7 +364,7 @@ public class GameManager : MonoBehaviour
         // 在这个场景里找出生点
         BoardRoot = GameObject.FindAnyObjectByType<Board>().transform;
 
-        WeaveBoardManager.instance.CreatePlayground();
+        WeaveBoardManager.instance.CreatePlayground(levelConfig.SpawnBorder);
 
         //Generate Character
         var player = Instantiate(playerPrefab, levelConfig.PlayerPosition, Quaternion.identity, BoardRoot);

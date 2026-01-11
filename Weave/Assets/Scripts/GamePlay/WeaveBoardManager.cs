@@ -83,11 +83,11 @@ public class WeaveBoardManager : MonoBehaviour
 
     }
 
-    public void CreatePlayground()
+    public void CreatePlayground(bool spawnBorder)
     {
         webs.Clear();
         nodes = new WebNode[cellX, cellY];
-        ScanEnvironment();
+        ScanEnvironment(spawnBorder);
         //SpawnBorder();
 
 
@@ -114,7 +114,7 @@ public class WeaveBoardManager : MonoBehaviour
         Instantiate(flyPrefab, pos, Quaternion.identity, GameManager.Instance.BoardRoot.transform);
     }
 
-    private void ScanEnvironment()
+    private void ScanEnvironment(bool spawnBorder = true)
     {
         //delete recent and spawn based on border
         var webNodes = GameObject.FindObjectsByType<WebNode>(FindObjectsInactive.Exclude, FindObjectsSortMode.InstanceID);
@@ -123,8 +123,8 @@ public class WeaveBoardManager : MonoBehaviour
            // GameObject.Destroy(node.gameObject); TODO might need to uncomment this
             //this.nodes[node.gridPos.x, node.gridPos.y] = node;
         }
-
-        SpawnBorder();
+        if (spawnBorder)
+            SpawnBorder();
     }
 
     public void LockNode(Vector2Int pos)
