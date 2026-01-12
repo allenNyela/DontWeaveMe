@@ -10,13 +10,15 @@ public static class WeaveInputSystem
 
 	public static readonly InputVector2 Move = new InputVector2("Move");
 
-	public static readonly InputKey Dive = new InputKey("Dive");
+	public static readonly InputKey Weave = new InputKey("Weave");
 
-	public static readonly InputKey MainAbility = new InputKey("Ability");
+	public static readonly InputKey Eat = new InputKey("Eat");
 
-	public static readonly InputKey Interact = new InputKey("Interact");
+	public static readonly InputKey CancelWeave = new InputKey("CancelWeave");
 
-	public static readonly InputKey FastRun = new InputKey("FastRun");
+	public static readonly InputKey DropNode = new InputKey("DropNode");
 
+	public static readonly InputKey Undo = new InputKey("Undo");
 
+	public static readonly InputKey Push = new InputKey("Push");
 }

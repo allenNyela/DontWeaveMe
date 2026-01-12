@@ -1,12 +1,13 @@
 using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
+using System;
 
 public class SpiderController : MonoBehaviour
 {
     public Rigidbody2D rb;
     public float moveSpeed;
-    public Vector2 input;
+    //public Vector2 input;
     public int stamina;
     public int maxStamina = 100;
     public TMP_Text staminaText;
@@ -56,6 +57,9 @@ public class SpiderController : MonoBehaviour
     public Sprite antennaUpSprite;
 
     public List<WebNode> currentLoop = new List<WebNode>();
+
+    public PlayerInput input;
+
     public enum Mode
     {
         Idle,
@@ -100,7 +104,7 @@ public class SpiderController : MonoBehaviour
 
         }
 
-        var velocity = input * moveSpeed;
+        var velocity = input.MovementInput2D() * moveSpeed;
         if (currentMode == Mode.Weaving && currentConnectingNode != null)
         {
             LimitWeaveMovement(ref velocity);
@@ -156,7 +160,7 @@ public class SpiderController : MonoBehaviour
     void Update()
     {
         //staminaText.text = $"Stamina: {stamina}";
-
+        input.SampleInput();
         if (currentLine != null)
         {
             Vector3 p0 = this.transform.position;
@@ -193,12 +197,13 @@ public class SpiderController : MonoBehaviour
         if (!inControl)
             return;
 
-        float h = Input.GetAxisRaw("Horizontal");
-        float v = Input.GetAxisRaw("Vertical");
+        //float h = Input.GetAxisRaw("Horizontal");
+        //float v = Input.GetAxisRaw("Vertical");
 
-        input = new Vector2(h, v).normalized;
+        //input = new Vector2(h, v).normalized;
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        //if (Input.GetKeyDown(KeyCode.Space))
+        if (input.weaveIsPressed)
         {
             if (!alreadyMoving)
             {
@@ -206,7 +211,8 @@ public class SpiderController : MonoBehaviour
             }
             
         }
-        else if (Input.GetKeyDown(KeyCode.C))
+        //else if (Input.GetKeyDown(KeyCode.C))
+        else if (input.cancelWeaveIsPressed)
         {
             
             CancelWeave();
@@ -214,21 +220,24 @@ public class SpiderController : MonoBehaviour
 
         if (currentMode != Mode.Weaving)
         {
-            if (Input.GetKeyDown(KeyCode.R))
+            //if (Input.GetKeyDown(KeyCode.R))
+            if (input.undoIsPressed)
             {
                 UndoWeb();
                 UndoWebNode();
             }
 
 
-            if (Input.GetKeyDown(KeyCode.F) && targetFly != null)
+            //if (Input.GetKeyDown(KeyCode.F) && targetFly != null)            
+            if (input.eatIsPressed && targetFly != null)
             {
                 Eat(targetFly);
             }
 
         }
 
-        if (Input.GetKeyDown(KeyCode.X))
+        //if (Input.GetKeyDown(KeyCode.X))
+        if (input.pushIsPressed)
         {
             if (nearPlatform && !alreadyMoving)
             {
@@ -250,7 +259,8 @@ public class SpiderController : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.E))
+        //if (Input.GetKeyDown(KeyCode.E))
+        if (input.dropNodeIsPressed)
         {
             if(numberOfNodesAvailable > 0)
             {
@@ -632,6 +642,34 @@ public class SpiderController : MonoBehaviour
         {
             nearPlatform = false;
             //nodePlatform = null;
+        }
+    }
+
+    [Serializable]
+    public class PlayerInput
+    {
+        public Vector2 movementInput;
+        public bool weaveIsPressed;
+        public bool eatIsPressed;
+        public bool cancelWeaveIsPressed;
+        public bool dropNodeIsPressed;
+        public bool undoIsPressed;
+        public bool pushIsPressed;
+        public Vector2 MovementInput2D()
+        {
+            return movementInput;
+        }
+
+        public void SampleInput()
+        {
+            this.movementInput = default(Vector2);
+            this.movementInput = WeaveInputSystem.Move.GetValue();
+            this.weaveIsPressed = WeaveInputSystem.Weave.GetKey();
+            this.eatIsPressed = WeaveInputSystem.Eat.GetKey();
+            this.cancelWeaveIsPressed = WeaveInputSystem.CancelWeave.GetKey();
+            this.dropNodeIsPressed = WeaveInputSystem.DropNode.GetKey();
+            this.undoIsPressed = WeaveInputSystem.Undo.GetKey();
+            this.pushIsPressed = WeaveInputSystem.Push.GetKey();
         }
     }
 }
