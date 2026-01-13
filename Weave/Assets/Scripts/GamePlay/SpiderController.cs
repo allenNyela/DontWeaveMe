@@ -60,6 +60,8 @@ public class SpiderController : MonoBehaviour
 
     public PlayerInput input;
 
+    public Animator animator;
+
     public enum Mode
     {
         Idle,
@@ -97,9 +99,33 @@ public class SpiderController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // mother check
+        if (!isPlayer)
+        {
+            Vector3 movement = transform.position - lastPos;
+
+            if (movement.sqrMagnitude > 0.0001f) // moved enough to rotate
+            {
+                float angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg;
+                Quaternion targetRot = Quaternion.Euler(0, 0, angle + angleOffset);
+                //visual.rotation = Quaternion.Euler(0, 0, angle + angleOffset);
+                visual.rotation = Quaternion.Lerp(visual.rotation, targetRot, Time.deltaTime * smooth);
+
+                animator?.SetBool("walking", true);
+            }
+            else
+            {
+                animator?.SetBool("walking", false);
+            }
+
+            lastPos = transform.position;
+        }
+
         if (!inControl)
         {
             rb.linearVelocity = Vector2.zero;
+            if (isPlayer)
+                animator?.SetBool("walking", false);
             return;
 
         }
@@ -111,6 +137,19 @@ public class SpiderController : MonoBehaviour
         }
 
         rb.linearVelocity = velocity;
+
+        if (isPlayer)
+        {
+            if (rb.linearVelocity.magnitude > 0.01f)
+            {
+                animator?.SetBool("walking", true);
+            }
+            else
+            {
+                animator?.SetBool("walking", false);
+            }
+
+        }
 
         if (alreadyMoving)
         {
@@ -479,20 +518,7 @@ public class SpiderController : MonoBehaviour
 
         transform.position = pos;
 
-        if (!isPlayer)
-        {
-            Vector3 movement = transform.position - lastPos;
 
-            if (movement.sqrMagnitude > 0.0001f) // moved enough to rotate
-            {
-                float angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg;
-                Quaternion targetRot = Quaternion.Euler(0, 0, angle + angleOffset);
-                //visual.rotation = Quaternion.Euler(0, 0, angle + angleOffset);
-                visual.rotation = Quaternion.Lerp(visual.rotation, targetRot, Time.deltaTime * smooth);
-            }
-
-            lastPos = transform.position;
-        }
     }   
 
     public void ConsumeStamina(int cost)

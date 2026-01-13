@@ -171,6 +171,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2593501540343881196}
+  - {fileID: 2689172426770374280}
   m_Father: {fileID: 6970852786951473111}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1965605635923220334
@@ -402,6 +403,116 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!1 &6987307456462231971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2689172426770374280}
+  - component: {fileID: 6520251554914967379}
+  - component: {fileID: 776219170807280945}
+  m_Layer: 0
+  m_Name: Sprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2689172426770374280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6987307456462231971}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0.22, y: -0, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 85608501560325941}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!212 &6520251554914967379
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6987307456462231971}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 10
+  m_Sprite: {fileID: 4863119149806008207, guid: 2c9c36fa79176a943af05c2563352275, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!95 &776219170807280945
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6987307456462231971}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6c4e8d752517e6e4991a1ad28b617bd3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7263917456876115957
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,7 +593,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 2752569033737931677}
   moveSpeed: 6
-  input: {x: 0, y: 0}
   stamina: 100
   maxStamina: 100
   staminaText: {fileID: 0}
@@ -496,6 +606,9 @@ MonoBehaviour:
   isPlayer: 1
   formingAWeb: 0
   cancelNode: 0
+  nearPlatform: 0
+  alreadyMoving: 0
+  nodePlatform: {fileID: 0}
   Ik: {fileID: 6017137027783754099}
   highlightedWeb: {fileID: 0}
   potentialStaminaUse: 0
@@ -509,6 +622,15 @@ MonoBehaviour:
   normalSprite: {fileID: 21300000, guid: d57918aad88f5cc48bdef8bf88dcc180, type: 3}
   antennaUpSprite: {fileID: 21300000, guid: d57918aad88f5cc48bdef8bf88dcc180, type: 3}
   currentLoop: []
+  input:
+    movementInput: {x: 0, y: 0}
+    weaveIsPressed: 0
+    eatIsPressed: 0
+    cancelWeaveIsPressed: 0
+    dropNodeIsPressed: 0
+    undoIsPressed: 0
+    pushIsPressed: 0
+  animator: {fileID: 776219170807280945}
 --- !u!58 &992571266508377096
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -771,6 +893,10 @@ PrefabInstance:
     - target: {fileID: 138405821284507893, guid: 1c4280b1ba702464b962c990813f89a8, type: 3}
       propertyPath: m_Name
       value: BabyIK
+      objectReference: {fileID: 0}
+    - target: {fileID: 138405821284507893, guid: 1c4280b1ba702464b962c990813f89a8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 529082446410427235, guid: 1c4280b1ba702464b962c990813f89a8, type: 3}
       propertyPath: m_LocalRotation.w
