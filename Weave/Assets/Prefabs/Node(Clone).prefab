@@ -221,7 +221,6 @@ GameObject:
   - component: {fileID: 422070947716835299}
   - component: {fileID: 5065102003786540099}
   - component: {fileID: 3176560697914004050}
-  - component: {fileID: -8018453146665281026}
   m_Layer: 0
   m_Name: Node(Clone)
   m_TagString: Untagged
@@ -334,7 +333,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.009435713, y: -0.019770697}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -344,7 +343,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.69659615, y: 0.7287034}
   m_EdgeRadius: 0
 --- !u!114 &5065102003786540099
 MonoBehaviour:
@@ -376,26 +375,6 @@ MonoBehaviour:
   spriteRenderer: {fileID: 1601976070765165993}
   scale: 10
   order: 500
---- !u!114 &-8018453146665281026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6860298733753425446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfd4c1b5fc18010448ea3e70cd003de5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movingHorizontal: 0
-  leftBound: {x: -1, y: 0}
-  rightBound: {x: 1, y: 0}
-  starterPosition: {x: 0, y: 0}
-  playerStartedPickUpPos: {x: 0, y: 0, z: 0}
-  playerinitPickup: 0
-  patrolLeftBound: {x: 0, y: 0}
-  patrolRightBound: {x: 0, y: 0}
 --- !u!1 &7345109701311726208
 GameObject:
   m_ObjectHideFlags: 0
