@@ -47,6 +47,11 @@ public class WebNode : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        HandleOnTrigger(other);
+    }
+
+    public virtual void HandleOnTrigger(Collider2D other)
+    {
         var controller = other.gameObject.GetComponent<SpiderController>();
 
         if (controller == null)
@@ -70,6 +75,11 @@ public class WebNode : MonoBehaviour
     }
 
     private void OnTriggerStay2D(Collider2D other)
+    {
+        HandleOnTriggerStay2D(other);
+    }
+
+    public virtual void HandleOnTriggerStay2D(Collider2D other)
     {
         var controller = other.gameObject.GetComponent<SpiderController>();
 
@@ -96,7 +106,11 @@ public class WebNode : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
+        HandleOnTriggerExit2D(other);
+    }
 
+    public virtual void HandleOnTriggerExit2D(Collider2D other)
+    {
         if (other.tag == "Player")
         {
             this.GetComponent<SpriteRenderer>().color = neighbors.Count > 0 ? WeaveBoardManager.instance.connectColor : WeaveBoardManager.instance.normalColor;

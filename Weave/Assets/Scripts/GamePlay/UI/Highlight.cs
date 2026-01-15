@@ -356,6 +356,8 @@ public class Highlight : MonoBehaviour
 
     public void UnHightlightLineRenderer(LineRenderer lr)
     {
+        if (lr == null)
+            return;
         if (previousLineOrder.ContainsKey(lr))
         {
             lr.sortingOrder = previousLineOrder[lr];

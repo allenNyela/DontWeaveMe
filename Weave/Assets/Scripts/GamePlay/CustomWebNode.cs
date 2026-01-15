@@ -5,29 +5,37 @@ public class CustomWebNode : WebNode
     public Vector2 customPosition;
     public bool onPlatform = false;
 
-    void OnTriggerEnter2D(Collider2D interactable)
+
+    public override void HandleOnTrigger(Collider2D other)
     {
-        if (interactable.CompareTag("Platform"))
+        base.HandleOnTrigger(other);
+
+        if (other.CompareTag("Platform"))
         {
             onPlatform = true;
         }
     }
 
-    private void OnTriggerExit2D(Collider2D interactable)
+    public override void HandleOnTriggerExit2D(Collider2D other)
     {
-        if (interactable.CompareTag("Platform"))
+        base.HandleOnTriggerExit2D(other);
+
+        if (other.CompareTag("Platform"))
         {
             onPlatform = false;
         }
     }
 
-    void OnTriggerStay2D(Collider2D interactable)
+    public override void HandleOnTriggerStay2D(Collider2D other)
     {
-        if (!onPlatform && interactable.CompareTag("Platform"))
+        base.HandleOnTriggerStay2D(other);
+
+        if (!onPlatform && other.CompareTag("Platform"))
         {
             onPlatform = true;
         }
     }
+
 }
 
 

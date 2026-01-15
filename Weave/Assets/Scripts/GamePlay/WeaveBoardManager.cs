@@ -118,11 +118,15 @@ public class WeaveBoardManager : MonoBehaviour
     {
         //delete recent and spawn based on border
         var webNodes = GameObject.FindObjectsByType<WebNode>(FindObjectsInactive.Exclude, FindObjectsSortMode.InstanceID);
-        foreach(var node in webNodes)
+        if (spawnBorder)
         {
-           // GameObject.Destroy(node.gameObject); TODO might need to uncomment this
-            //this.nodes[node.gridPos.x, node.gridPos.y] = node;
+            foreach (var node in webNodes)
+            {
+                GameObject.Destroy(node.gameObject);
+                //this.nodes[node.gridPos.x, node.gridPos.y] = node;
+            }
         }
+
         if (spawnBorder)
             SpawnBorder();
     }

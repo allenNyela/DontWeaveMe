@@ -410,6 +410,9 @@ public class SpiderController : MonoBehaviour
     //not by controls but by script
     public void ConnectNodes(WebNode nodeA, WebNode nodeB)
     {
+        if (nodeA == null || nodeB == null)
+            return;
+
         WeaveBoardManager.instance.Connect(nodeA, nodeB, this, false);
 
         Vector3 p0 = nodeA.transform.position;
@@ -690,12 +693,12 @@ public class SpiderController : MonoBehaviour
         {
             this.movementInput = default(Vector2);
             this.movementInput = WeaveInputSystem.Move.GetValue();
-            this.weaveIsPressed = WeaveInputSystem.Weave.GetKey();
-            this.eatIsPressed = WeaveInputSystem.Eat.GetKey();
-            this.cancelWeaveIsPressed = WeaveInputSystem.CancelWeave.GetKey();
-            this.dropNodeIsPressed = WeaveInputSystem.DropNode.GetKey();
-            this.undoIsPressed = WeaveInputSystem.Undo.GetKey();
-            this.pushIsPressed = WeaveInputSystem.Push.GetKey();
+            this.weaveIsPressed = WeaveInputSystem.Weave.GetKeyDown();
+            this.eatIsPressed = WeaveInputSystem.Eat.GetKeyDown();
+            this.cancelWeaveIsPressed = WeaveInputSystem.CancelWeave.GetKeyDown();
+            this.dropNodeIsPressed = WeaveInputSystem.DropNode.GetKeyDown();
+            this.undoIsPressed = WeaveInputSystem.Undo.GetKeyDown();
+            this.pushIsPressed = WeaveInputSystem.Push.GetKeyDown();
         }
     }
 }
