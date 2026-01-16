@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class CustomWebNode : WebNode
 {
-    public Vector2 customPosition;
     public bool onPlatform = false;
 
 

@@ -296,7 +296,7 @@ public class WeaveBoardManager : MonoBehaviour
         {
             GameObject newNode = Instantiate(WeaveBoardManager.instance.nodeObject, nodeData.pos, Quaternion.identity, GameManager.Instance.BoardRoot.gameObject.transform);
             var customNode = newNode.GetComponent<CustomWebNode>();
-            customNode.customPosition = nodeData.pos;
+            customNode.transform.position = nodeData.pos;
             customNode.gridPos = WeaveBoardManager.instance.WorldToGridPos(nodeData.pos);
 
             return customNode;
@@ -310,7 +310,7 @@ public class WeaveBoardManager : MonoBehaviour
         {
             return new NodeStruct()
             {
-                pos = (web as CustomWebNode).customPosition,
+                pos = (web as CustomWebNode).transform.position,
                 isCustom = true,
             };
         }

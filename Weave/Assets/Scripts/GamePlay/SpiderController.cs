@@ -328,7 +328,6 @@ public class SpiderController : MonoBehaviour
         Debug.Log("Dropping Node");
         GameObject newNode = Instantiate(WeaveBoardManager.instance.nodeObject, transform.position, Quaternion.identity, GameManager.Instance.BoardRoot.gameObject.transform);
         var customNode = newNode.GetComponent<CustomWebNode>();
-        customNode.customPosition = transform.position;
         customNode.gridPos = WeaveBoardManager.instance.WorldToGridPos(transform.position);
         numberOfNodesAvailable--;
     }
