@@ -15,10 +15,13 @@ MonoBehaviour:
   Time: 1
   ScenePath: Scenes/Level 2
   CreateMother: 1
-  PlayerStamina: 16
+  PlayerStamina: 25
   MotherStamina: 70
   PlayerAvailableNodes: 3
   MotherPosition: {x: 0, y: 0}
   PlayerPosition: {x: 0, y: 0}
   FlyQuota: 0
   PlayTutorial: 1
+  HideSleepButton: 0
+  lockNodes: []
+  SpawnBorder: 0
