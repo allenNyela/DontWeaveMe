@@ -214,7 +214,7 @@ public class WeaveBoardManager : MonoBehaviour
         if (a == null || b == null || a == b)
             return;
 
-        var distance =  (int)(a.gridPos - b.gridPos).magnitude;
+        var distance =  (int)(WeaveBoardManager.instance.WorldToGridPos(a.transform.position) - WeaveBoardManager.instance.WorldToGridPos(b.transform.position)).magnitude;
         if (spider.stamina >= distance)
         {
             a.AddNeighnors(b);

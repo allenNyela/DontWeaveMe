@@ -180,7 +180,7 @@ public class SpiderController : MonoBehaviour
         Vector2 curPos = rb.position;
         Vector2 nextPos = curPos + velocity * dt;
 
-        Vector2Int nodeGrid = currentConnectingNode.gridPos;
+        Vector2Int nodeGrid = WeaveBoardManager.instance.WorldToGridPos(currentConnectingNode.transform.position);
         Vector2Int curGrid = WeaveBoardManager.instance.WorldToGridPos(curPos);
         Vector2Int nextGrid = WeaveBoardManager.instance.WorldToGridPos(nextPos);
 
