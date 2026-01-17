@@ -2137,7 +2137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7201556010870105234, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.95
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 7201556010870105234, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2205,7 +2205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8622476655744333747, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: rightBound.y
-      value: -5.44
+      value: -3.89
       objectReference: {fileID: 0}
     - target: {fileID: 8622476655744333747, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: movingHorizontal
@@ -3086,7 +3086,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7201556010870105234, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.95
+      value: 0.69
       objectReference: {fileID: 0}
     - target: {fileID: 7201556010870105234, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3146,7 +3146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8622476655744333747, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: leftBound.y
-      value: 1.98
+      value: 2.34
       objectReference: {fileID: 0}
     - target: {fileID: 8622476655744333747, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: rightBound.x
@@ -3154,7 +3154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8622476655744333747, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: rightBound.y
-      value: -5.44
+      value: -3.89
       objectReference: {fileID: 0}
     - target: {fileID: 8622476655744333747, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: movingHorizontal
