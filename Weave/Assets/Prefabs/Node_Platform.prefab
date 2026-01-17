@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8622476655744333747}
   m_Layer: 0
   m_Name: Node_Platform
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 4160635012330822537, guid: d609c975f5bac084087667d9de7f4ad1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -134,7 +134,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.6, y: 5}
+  m_Size: {x: 0.42, y: 3.83}
   m_EdgeRadius: 0
 --- !u!114 &8622476655744333747
 MonoBehaviour:
@@ -148,8 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfd4c1b5fc18010448ea3e70cd003de5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingHorizontal: 0
-  leftBound: {x: -3.43195, y: 0}
+  movingHorizontal: 1
+  leftBound: {x: -3.4319503, y: 0}
   rightBound: {x: 2.8228836, y: 0}
   starterPosition: {x: 0, y: 0}
   playerStartedPickUpPos: {x: 0, y: 0, z: 0}
@@ -182,7 +182,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1083896670899172932, guid: a5b559308bd06384787114e79f5f6d3f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.28
+      value: -0.06
       objectReference: {fileID: 0}
     - target: {fileID: 1083896670899172932, guid: a5b559308bd06384787114e79f5f6d3f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -190,7 +190,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1083896670899172932, guid: a5b559308bd06384787114e79f5f6d3f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.06
+      value: -0.17
       objectReference: {fileID: 0}
     - target: {fileID: 1083896670899172932, guid: a5b559308bd06384787114e79f5f6d3f, type: 3}
       propertyPath: m_LocalRotation.w
