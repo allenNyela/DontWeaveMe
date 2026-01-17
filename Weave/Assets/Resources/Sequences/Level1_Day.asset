@@ -20,7 +20,7 @@ MonoBehaviour:
   PlayerAvailableNodes: 0
   MotherPosition: {x: 0, y: 0}
   PlayerPosition: {x: 0, y: 0}
-  FlyQuota: 1
+  FlyQuota: 3
   PlayTutorial: 0
   HideSleepButton: 0
   lockNodes: []
