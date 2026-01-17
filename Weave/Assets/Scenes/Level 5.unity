@@ -157,7 +157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7201556010870105234, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: 1.06
       objectReference: {fileID: 0}
     - target: {fileID: 7201556010870105234, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: m_LocalPosition.z
@@ -217,7 +217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8622476655744333747, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: leftBound.y
-      value: 3.39
+      value: -5.51
       objectReference: {fileID: 0}
     - target: {fileID: 8622476655744333747, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: rightBound.x
@@ -225,7 +225,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8622476655744333747, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: rightBound.y
-      value: -3.7
+      value: 2.46
       objectReference: {fileID: 0}
     - target: {fileID: 8622476655744333747, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: movingHorizontal
@@ -846,7 +846,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7201556010870105234, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: -2.14
       objectReference: {fileID: 0}
     - target: {fileID: 7201556010870105234, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: m_LocalPosition.z
@@ -906,7 +906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8622476655744333747, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: leftBound.y
-      value: 3.39
+      value: -2.47
       objectReference: {fileID: 0}
     - target: {fileID: 8622476655744333747, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: rightBound.x
@@ -914,7 +914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8622476655744333747, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: rightBound.y
-      value: -3.7
+      value: 6.08
       objectReference: {fileID: 0}
     - target: {fileID: 8622476655744333747, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: movingHorizontal
@@ -1273,7 +1273,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7201556010870105234, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.07
+      value: 3.61
       objectReference: {fileID: 0}
     - target: {fileID: 7201556010870105234, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1333,11 +1333,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8622476655744333747, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: leftBound.x
-      value: -6.9808645
+      value: -10.19
       objectReference: {fileID: 0}
     - target: {fileID: 8622476655744333747, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: rightBound.x
-      value: 6.935935
+      value: 4.13
       objectReference: {fileID: 0}
     - target: {fileID: 8622476655744333747, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: movingHorizontal
@@ -1683,7 +1683,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7201556010870105234, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.23
+      value: -3.82
       objectReference: {fileID: 0}
     - target: {fileID: 7201556010870105234, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1743,11 +1743,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8622476655744333747, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: leftBound.x
-      value: -6.980865
+      value: -3.77
       objectReference: {fileID: 0}
     - target: {fileID: 8622476655744333747, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: rightBound.x
-      value: 6.935935
+      value: 11.22
       objectReference: {fileID: 0}
     - target: {fileID: 8622476655744333747, guid: b9189e2b8771a44489d6e25dd0943903, type: 3}
       propertyPath: movingHorizontal
@@ -2002,7 +2002,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1824149609}
   moveSpeed: 6
-  input: {x: 0, y: 0}
   stamina: 100
   maxStamina: 100
   staminaText: {fileID: 0}
@@ -2032,6 +2031,15 @@ MonoBehaviour:
   normalSprite: {fileID: 0}
   antennaUpSprite: {fileID: 0}
   currentLoop: []
+  input:
+    movementInput: {x: 0, y: 0}
+    weaveIsPressed: 0
+    eatIsPressed: 0
+    cancelWeaveIsPressed: 0
+    dropNodeIsPressed: 0
+    undoIsPressed: 0
+    pushIsPressed: 0
+  animator: {fileID: 0}
 --- !u!58 &1824149611
 CircleCollider2D:
   m_ObjectHideFlags: 0
