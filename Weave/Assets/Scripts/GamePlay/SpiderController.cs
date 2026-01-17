@@ -216,7 +216,7 @@ public class SpiderController : MonoBehaviour
         if (currentMode == Mode.Weaving)
         {
             var currentSpiderPos = WeaveBoardManager.instance.WorldToGridPos(this.transform.position);
-            var distance = (currentConnectingNode.gridPos - currentSpiderPos).magnitude;
+            var distance = (WeaveBoardManager.instance.WorldToGridPos(currentConnectingNode.transform.position) - currentSpiderPos).magnitude;
             //Debug.Log($"====> potential distance {distance}");
             potentialStaminaUse = (int)distance;
             energyBar.RefreshSilkBar(this);
