@@ -418,6 +418,8 @@ public class GameManager : MonoBehaviour
 
         FliesEatenThisLevel = 0;
         GameManager.Instance.ResetTurn();
+
+        GameObject.Find("BG").GetComponent<SpriteRenderer>().sprite = levelConfig.BackgroundSprite;
         FadeOut(() =>
         {
 

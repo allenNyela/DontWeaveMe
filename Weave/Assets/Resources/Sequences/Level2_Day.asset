@@ -24,3 +24,5 @@ MonoBehaviour:
   PlayTutorial: 0
   HideSleepButton: 0
   lockNodes: []
+  SpawnBorder: 0
+  BackgroundSprite: {fileID: 21300000, guid: 094e1d30ba67b6c45a14e8e92380760e, type: 3}

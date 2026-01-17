@@ -44,4 +44,7 @@ public class GameLevelConfig : GameConfig
 
     [SerializeField]
     public bool SpawnBorder = false;
+
+    [SerializeField]
+    public Sprite BackgroundSprite;
 }

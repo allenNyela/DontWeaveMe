@@ -23,3 +23,6 @@ MonoBehaviour:
   FlyQuota: 5
   PlayTutorial: 0
   HideSleepButton: 1
+  lockNodes: []
+  SpawnBorder: 0
+  BackgroundSprite: {fileID: 21300000, guid: d6beea299ab826c4bbe32869337a3e05, type: 3}
