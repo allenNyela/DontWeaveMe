@@ -15,7 +15,7 @@ MonoBehaviour:
   Time: 1
   ScenePath: Scenes/Level 4
   CreateMother: 0
-  PlayerStamina: 30
+  PlayerStamina: 35
   MotherStamina: 0
   PlayerAvailableNodes: 3
   MotherPosition: {x: 0, y: 0}
@@ -24,3 +24,4 @@ MonoBehaviour:
   PlayTutorial: 0
   HideSleepButton: 0
   lockNodes: []
+  SpawnBorder: 0
