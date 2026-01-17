@@ -156,14 +156,16 @@ public class SpiderController : MonoBehaviour
             if (nodePlatform.GetComponent<PlatformMove>().movingHorizontal)
             {
                 Vector3 currentPosition = transform.position;
-                currentPosition.x = Mathf.Clamp(currentPosition.x, nodePlatform.GetComponent<PlatformMove>().patrolLeftBound.x, nodePlatform.GetComponent<PlatformMove>().patrolRightBound.x);
+                var xDiff = nodePlatform.transform.position.x - this.transform.position.x;
+                currentPosition.x = Mathf.Clamp(currentPosition.x, nodePlatform.GetComponent<PlatformMove>().patrolLeftBound.x - xDiff, nodePlatform.GetComponent<PlatformMove>().patrolRightBound.x - xDiff);
                 currentPosition.y = transform.position.y;
                 transform.position = currentPosition;
             } else
             {
+                var yDiff = nodePlatform.transform.position.y - this.transform.position.y;
                 Vector3 currentPosition = transform.position;
                 currentPosition.x = transform.position.x;
-                currentPosition.y = Mathf.Clamp(currentPosition.y, nodePlatform.GetComponent<PlatformMove>().patrolLeftBound.y, nodePlatform.GetComponent<PlatformMove>().patrolRightBound.y);
+                currentPosition.y = Mathf.Clamp(currentPosition.y, nodePlatform.GetComponent<PlatformMove>().patrolLeftBound.y - yDiff, nodePlatform.GetComponent<PlatformMove>().patrolRightBound.y - yDiff);
                 transform.position = currentPosition;
             }
             
